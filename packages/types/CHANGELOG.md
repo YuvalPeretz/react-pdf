@@ -1,5 +1,15 @@
 # @react-pdf/types
 
+## 2.8.1
+
+### Patch Changes
+
+- [#3087](https://github.com/diegomura/react-pdf/pull/3087) [`7cd66e4f`](https://github.com/diegomura/react-pdf/commit/7cd66e4fc37cd1393adc6250a919fe2629812082) Thanks [@diegomura](https://github.com/diegomura)! - fix: font exported types
+
+- Updated dependencies [[`7cd66e4f`](https://github.com/diegomura/react-pdf/commit/7cd66e4fc37cd1393adc6250a919fe2629812082)]:
+  - @react-pdf/font@3.1.1
+  - @react-pdf/stylesheet@6.0.1
+
 ## 2.8.0
 
 ### Minor Changes
