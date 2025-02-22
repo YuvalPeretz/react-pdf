@@ -295,6 +295,7 @@ export type TextStyle = {
   textOverflow?: 'ellipsis';
   textTransform?: TextTransform;
   verticalAlign?: VerticalAlign;
+  direction?: 'ltr' | 'rtl';
 };
 
 export type TextExpandedStyle = TextStyle;

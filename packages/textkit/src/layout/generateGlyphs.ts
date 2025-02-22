@@ -56,9 +56,8 @@ const layoutRun = (string: string) => {
       undefined,
       undefined,
       undefined,
-      'ltr',
+      attributes.direction || 'ltr',
     );
-
     const positions = scalePositions(run, glyphRun.positions);
     const glyphIndices = resolveGlyphIndices(glyphRun.glyphs);
 

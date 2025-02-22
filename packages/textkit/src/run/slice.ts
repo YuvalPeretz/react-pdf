@@ -17,6 +17,7 @@ import { Glyph, Position, Run } from '../types';
 const slice = (start: number, end: number, run: Run): Run => {
   const runScale = scale(run);
   const font = getFont(run);
+  const direction = run.attributes.direction || 'ltr';
 
   // Get glyph start and end indices
   const startIndex = glyphIndexAt(start, run);
@@ -29,11 +30,13 @@ const slice = (start: number, end: number, run: Run): Run => {
   // Get start ligature chunks (if any)
   const startOffset = offset(start, run);
   const startGlyphs =
-    startOffset > 0 ? sliceGlyph(startOffset, Infinity, font, startGlyph) : [];
+    startOffset > 0
+      ? sliceGlyph(startOffset, Infinity, font, startGlyph, direction)
+      : [];
 
   // Get end ligature chunks (if any)
   const endOffset = offset(end, run);
-  const endGlyphs = sliceGlyph(0, endOffset, font, endGlyph);
+  const endGlyphs = sliceGlyph(0, endOffset, font, endGlyph, direction);
 
   // Compute new glyphs
   const sliceStart = startIndex + Math.min(1, startOffset);
