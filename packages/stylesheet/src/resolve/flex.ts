@@ -40,6 +40,7 @@ const handlers = {
   flexWrap: processNoopValue,
   justifyContent: processNoopValue,
   justifySelf: processNoopValue,
+  direction: processNoopValue,
 };
 
 export default handlers;
