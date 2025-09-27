@@ -322,7 +322,6 @@ export type TextTransform =
 export type VerticalAlign = 'sub' | 'super';
 
 export type TextStyle = {
-  direction?: 'ltr' | 'rtl';
   fontSize?: number | string;
   fontFamily?: string | string[];
   fontStyle?: FontStyle;
@@ -338,6 +337,7 @@ export type TextStyle = {
   textOverflow?: 'ellipsis';
   textTransform?: TextTransform;
   verticalAlign?: VerticalAlign;
+  direction?: 'ltr' | 'rtl';
 };
 
 export type TextExpandedStyle = TextStyle;

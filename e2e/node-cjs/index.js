@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const fs = require('node:fs/promises');
 const assert = require('node:assert');
 const { test } = require('node:test');

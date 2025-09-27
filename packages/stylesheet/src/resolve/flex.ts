@@ -50,6 +50,7 @@ const handlers = {
   flexWrap: processNoopValue<'flexWrap'>,
   justifyContent: processNoopValue<'justifyContent'>,
   justifySelf: processNoopValue<'justifySelf'>,
+  direction: processNoopValue<'direction'>,
 };
 
 export default handlers;
